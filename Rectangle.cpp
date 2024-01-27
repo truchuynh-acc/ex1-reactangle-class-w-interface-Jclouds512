@@ -1,29 +1,36 @@
 /**Rectangle.cpp Code*/
 
-/** @file Circle.cpp */
+/** @file Rectangle.cpp */
 
-#include "Circle.h"
+#include "Rectangle.h"
 
-Circle::Circle()
+Rectangle::Rectangle()
 {
-	radius = 1.0;
+    length = 1.0;
+    width = 1.0;
 }
 
-void Circle::setRadius(double newRadius)
+void Rectangle::set(double newLength, double newWidth)
 {
-	if (newRadius > 0.0)
+	if (newLength > 0.0 and newWidth > 0.0)
 	{
-		radius = newRadius;
+		length = newLength;
+        width = newWidth;
 	}
 	// else leave this circle unchanged
 }
 
-double Circle::getRadius() const
+double Rectangle::getLength() const
 {
-	return radius;
+	return length;
 }
 
-double Circle::getArea() const
+double Rectangle::getWidth() const
 {
-	return 3.14 * radius * radius;
+	return width;
+}
+
+double Rectangle::getArea() const
+{
+	return length * width;
 }
