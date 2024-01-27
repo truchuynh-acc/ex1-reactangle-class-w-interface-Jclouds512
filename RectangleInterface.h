@@ -10,7 +10,8 @@ class RectangleInterface
 {
 public:
 	/** Updates the length and width of this Rectang
-	@param  newLength the new length and new width for this Rectangle
+	@param  newLength the new length for this Rectangle
+    @param  newWidth the new width for this Rectangle
 	@pre    newLength and newWidth must be larger than zero
 	@post   If newLength and newWidth are valid, the length
 	        of this object is set to newLength and the width is
@@ -21,13 +22,17 @@ public:
 
      
      
-	virtual void set(double newLength, double newHeight) = 0;
+	virtual void set(double newLength, double newWidth) = 0;
 	
-	/** Gets the radius  of this Circle
-	@return The radius of this Circle. */
-	virtual double getRadius() const = 0;
+	/** Gets the length of this Rectangle
+	@return The length of this Rectangle. */
+	virtual double getLength() const = 0;
 	
-	/** Gets the area  of this Circle
+    /** Gets the width of this Rectangle
+	@return The width of this Rectangle. */
+	virtual double getWidth() const = 0;
+    
+	/** Gets the area of this Circle
 	 @return The area of this Circle. */
 	virtual double getArea() const = 0;
 
