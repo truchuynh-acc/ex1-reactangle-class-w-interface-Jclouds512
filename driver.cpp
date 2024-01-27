@@ -11,14 +11,14 @@ Date: 1/27/24
 /** @file driver.cpp */
 
 #include <iostream>
-#include "Rectangle.h"
+#include "Circle.h"
 using namespace std;
 
 int main()
 {
-	Rectangle theRectangle;
+	Circle theCircle;
 	
-	cout << "Intital state of the rectangle" << endl;
+	cout << "Intital state of the circle" << endl;
 	cout << "    radius = " << theCircle.getRadius() << endl;
 	cout << "    area   = " << theCircle.getArea() << endl << endl;
 	

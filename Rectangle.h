@@ -1,37 +1,20 @@
 /**This is the Rectangle.h Code*/
 
-/** @file Rectangle.cpp */
+/** @file Rectangle.h */
 
-#include "Rectangle.h"
+#ifndef RECTANGLE_
+#define RECTANGLE_
 
-Rectangle::Rectangle()
+#include "RectangleInterface.h"
+
+class Rectangle : public RectangleInterface
 {
-	length = 1.0;
-    width = 1.0;
-
-}
-
-void Rectangle::setRadius(double newRadius)
-{
-	if (newLength > 0.0)
-	{
-		length = newLength;
-	}
-
-    if (newWidth > 0.0)
-    {
-        width = newWidth
-    }
-	// else leave this circle unchanged
-}
-
-double Rectangle::getLength() const
-{
-	return radius;
-}
-
-double Rect
-double Rectangle::getArea() const
-{
-	return radius * radius;
-}
+public:
+	Rectangle();
+	void setRadius(double newRadius);
+	double getRadius() const;
+	double getArea() const;
+private:
+	double radius;
+};
+#endif
