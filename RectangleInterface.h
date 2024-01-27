@@ -32,11 +32,11 @@ public:
 	@return The width of this Rectangle. */
 	virtual double getWidth() const = 0;
     
-	/** Gets the area of this Circle
-	 @return The area of this Circle. */
+	/** Gets the area of this Rectangle
+	 @return The area of this Rectangle. */
 	virtual double getArea() const = 0;
 
-	/** Destroys this Circle and frees its assigned memory. */
-	virtual ~CircleInterface() {}
+	/** Destroys this Rectangle and frees its assigned memory. */
+	virtual ~RectangleInterface() {}
 };
 #endif
