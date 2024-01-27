@@ -11,10 +11,12 @@ class Rectangle : public RectangleInterface
 {
 public:
 	Rectangle();
-	void setRadius(double newRadius);
-	double getRadius() const;
+	void set(double newLength, double newWidth);
+	double getLength() const;
+    double getWidth() const;
 	double getArea() const;
 private:
-	double radius;
+	double length;
+    double width;
 };
 #endif
