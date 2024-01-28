@@ -16,8 +16,13 @@ bool Rectangle::set(double newLength, double newWidth)
 	{
 		length = newLength;
         width = newWidth;
+		return true;
 	}
-	// else leave this circle unchanged
+	else
+	{
+		return false;
+	}
+
 }
 
 double Rectangle::getLength() const

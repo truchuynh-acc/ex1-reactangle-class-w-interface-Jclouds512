@@ -23,11 +23,19 @@ int main()
     cout << "    width = " << theRectangle.getLength() << endl;
 	cout << "    area   = " << theRectangle.getArea() << endl << endl;
 	
-	theRectangle.set(11.0, 22.0);
+	bool myBool;
+	myBool = theRectangle.set(-11.0, 22.0);
+	if (myBool == true)
+	{
 	cout << "Current state of the rectangle" << endl;
     cout << "    length = " << theRectangle.getLength() << endl;
     cout << "    width = " << theRectangle.getWidth() << endl;
 	cout << "    area   = " << theRectangle.getArea() << endl << endl;
+	}
+	else
+	{
+		cout << "Your values are not acceptable.";
+	}
 	
 	return 0;
 }
