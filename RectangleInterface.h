@@ -22,7 +22,7 @@ public:
 
      
      
-	virtual void set(double newLength, double newWidth) = 0;
+	virtual bool set(double newLength, double newWidth) = 0;
 	
 	/** Gets the length of this Rectangle
 	@return The length of this Rectangle. */

@@ -2,15 +2,15 @@
 
 /** @file Rectangle.cpp */
 
-#include "Rectangle.h"
+#include "Rectangle.h" // include Rectangle.h file
 
-Rectangle::Rectangle()
+Rectangle::Rectangle() // constructor for rectangle class
 {
-    length = 1.0;
-    width = 1.0;
+    length = 1.0; // set length to 1
+    width = 1.0; // set width to 1
 }
 
-void Rectangle::set(double newLength, double newWidth)
+bool Rectangle::set(double newLength, double newWidth)
 {
 	if (newLength > 0.0 and newWidth > 0.0)
 	{

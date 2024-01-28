@@ -11,12 +11,12 @@ class Rectangle : public RectangleInterface
 {
 public:
 	Rectangle();
-	void set(double newLength, double newWidth);
-	double getLength() const;
-    double getWidth() const;
-	double getArea() const;
+	bool set(double newLength, double newWidth); // declare the set function
+	double getLength() const; // declare the getLength function
+    double getWidth() const; // declare the getWidth function
+	double getArea() const; // declare the getArea function
 private:
-	double length;
+	double length; // declare the length variable
     double width;
 };
 #endif
