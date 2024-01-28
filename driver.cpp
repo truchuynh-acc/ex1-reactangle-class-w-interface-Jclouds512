@@ -23,7 +23,7 @@ int main()
     cout << "    width = " << theRectangle.getLength() << endl;
 	cout << "    area   = " << theRectangle.getArea() << endl << endl;
 	
-	theRectangle.set(2.0, 2.0);
+	theRectangle.set(11.0, 22.0);
 	cout << "Current state of the rectangle" << endl;
     cout << "    length = " << theRectangle.getLength() << endl;
     cout << "    width = " << theRectangle.getLength() << endl;
