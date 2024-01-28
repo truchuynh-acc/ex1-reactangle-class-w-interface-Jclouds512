@@ -17,6 +17,6 @@ public:
 	double getArea() const; // declare the getArea function
 private:
 	double length; // declare the length variable
-    double width;
+    double width; // declare the width variable
 };
 #endif
